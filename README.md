@@ -291,7 +291,7 @@ Authorization: Bearer <access_token>
 
 ---
 
-## 👤 USERS (ADMIN)
+## 👤 USERS (ADMIN)✅
 
 | Method | Endpoint       | Description             | Access |
 | ------ | -------------- | ----------------------- | ------ |
