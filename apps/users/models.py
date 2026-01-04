@@ -29,3 +29,19 @@ class PatientProfile(models.Model):
     phone = models.CharField(max_length=20)
     date_of_birth = models.DateField()
     gender = models.CharField(max_length=6, choices=GENDER_CHOISE)
+
+
+
+
+    @property
+    def is_admin(self)->bool:
+        return self.role == self.role.admin
+    
+    @property
+    def is_user(self)->bool:
+        return self.role == self.role.user
+    
+    @property
+    def is_doctor(self)->bool:
+        return self.role == self.role.doctor
+    

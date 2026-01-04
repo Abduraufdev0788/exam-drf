@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'apps.doctors.apps.DoctorsConfig',
     'apps.appointments.apps.AppointmentsConfig',
 
+    'rest_framework.authtoken',
+
 
     'rest_framework'
 ]
