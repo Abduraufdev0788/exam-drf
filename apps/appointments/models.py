@@ -2,10 +2,8 @@ from django.db import models
 from apps.doctors.models import DoctorProfile, TimeSlotDoctor
 from apps.users.models import PatientProfile
 
-
-class TimeSlot(models.Model):
+class Appointment(models.Model):
     STATUS_CHOICES = (
-        ('pending', 'Pending'),
         ('confirmed', 'Confirmed'),
         ('cancelled', 'Cancelled'),
     )

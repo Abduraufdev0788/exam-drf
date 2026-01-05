@@ -17,7 +17,7 @@ def create_profiles(sender, instance, created, **kwargs):
             gender='male'
         )
 
-    elif instance.role == 'user':
+    elif instance.role == 'patient':
         PatientProfile.objects.create(
             user=instance,
             phone='',

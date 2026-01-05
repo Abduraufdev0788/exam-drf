@@ -41,4 +41,7 @@ class PatientProfile(models.Model):
     phone = models.CharField(max_length=20)
     date_of_birth = models.DateField()
     gender = models.CharField(max_length=6, choices=GENDER_CHOISE)
+
+    def __str__(self):
+        return f"{self.id}.{self.user.username}"
     
