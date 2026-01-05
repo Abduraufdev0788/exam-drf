@@ -39,6 +39,7 @@ class LoginSerializer(serializers.Serializer):
 
 
 class ProfileSerializer(serializers.ModelSerializer):
+    role = serializers.CharField(read_only = True)
     class Meta:
         model = User
         fields = (

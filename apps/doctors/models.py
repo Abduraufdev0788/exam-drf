@@ -21,7 +21,7 @@ class DoctorProfile(models.Model):
 
 
 class TimeSlotDoctor(models.Model):
-    doctor = models.ForeignKey(DoctorProfile, on_delete=models.CASCADE)
+    doctor = models.ForeignKey(DoctorProfile, on_delete=models.CASCADE, related_name="doctor_profile")
     date = models.DateField()
     start_time = models.TimeField()
     end_time = models.TimeField()
